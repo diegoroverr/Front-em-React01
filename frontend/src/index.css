@@ -1,0 +1,90 @@
+/* Reset e ajustes básicos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ff3333; /* Vermelho mais escuro para o fundo */
+  margin: 0;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Altura mínima para ocupar toda a altura visível */
+  padding: 20px; /* Espaçamento interno */
+}
+
+#root {
+  width: 100%; /* Define a largura do conteúdo */
+  max-width: 1200px; /* Largura máxima para limitar o conteúdo */
+  background-color: #ffffff; /* Fundo branco para o conteúdo */
+  border-left: 1px solid #e1e1e1; /* Borda esquerda cinza */
+  border-right: 1px solid #e1e1e1; /* Borda direita cinza */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px; /* Espaçamento interno */
+}
+
+header {
+  background-color: #ff6666; /* Vermelho igual ao fundo */
+  padding: 20px;
+  text-align: center; /* Centraliza o texto */
+}
+
+nav {
+  background-color: #ff6666; /* Vermelho mais claro para a barra de navegação */
+  padding: 10px 0; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+nav ul li {
+  margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+  color: black; /* Texto preto para os links */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Texto branco ao passar o mouse */
+  background-color: #ff9999; /* Vermelho mais claro ao passar o mouse */
+}
+
+main {
+  background-color: #ffffff; /* Fundo branco para o conteúdo principal */
+  padding: 20px;
+  width: 100%; /* Largura total do conteúdo */
+  max-width: 1000px; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+footer {
+  background-color: #ff6666; /* Vermelho mais claro para o rodapé */
+  padding: 20px;
+  text-align: center; /* Centraliza o texto */
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores */
+  nav ul {
+    flex-direction: column; /* Empilha os itens verticalmente */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Espaçamento vertical entre os itens */
+  }
+}
